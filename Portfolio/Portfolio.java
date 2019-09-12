@@ -26,10 +26,9 @@ public class Portfolio
         System.out.println("Hello welcome to Milano's Portfolio!");
         //System.out.println("What would you like to see first?");
         System.out.println("\nWhat do you want pals");
-        System.out.println("Press 4 for Countdown Song");
-        System.out.println("Press 5 for Midterm Sample Question");
+        
         System.out.println("Press 0 to exit");
-        //System.out.println("Press 3 to continue");
+        System.out.println("Press 3 to continue");
         answer = keyboard.nextInt();
  
         while(answer != 0)
@@ -41,15 +40,16 @@ public class Portfolio
             
             answer = keyboard.nextInt();
             
-            if(answer == 1)
-                runner.CountdownSong();
-                
-            if(answer == 2)
+            if(answer == 4){
+               
+             runner.CountdownSong();
+            }
+            if(answer == 5){
                 runner.midtermQuestion();
-        
-            //System.out.println("Press 0 to exit");
+            }
+            System.out.println("Press 0 to exit");
           
-            //exit = keyboard.nextInt();
+            int exit = keyboard.nextInt();
         }  
     }
 
@@ -57,23 +57,24 @@ public class Portfolio
     public void CountdownSong()
     { 
         int number = 0;
+        String chicken;
         Scanner keyboard = new Scanner(System.in);
         
         System.out.print('\u000C');
-        System.out.println("What animal do you want");
-        String animal = keyboard.nextLine();
-        System.out.println("How many " + animal + "s do you want jumping on the bed?");
+        System.out.println("What poultry do you want");
+        chicken = keyboard.nextLine();
+        System.out.println("How many " + chicken + "s do you want fried?");
         number = keyboard.nextInt();
-        System.out.println(number + " " + animal + "s jumping on the bed");
+        System.out.println(number + " " + chicken + "s fried");
         
         for(int i=number; i > 0; i--)
         {
             int newNumber = 0;
             
-            System.out.println("One fell off and broke his head");
-            System.out.println("Mama called the doctor and the doctor said");
+            System.out.println("One got fried and tasted delicious");
+            System.out.println("Fat cunt went to KFC and fried some more");
             newNumber = i - 1;
-            System.out.println(newNumber +" "+ animal + "s jumping on the bed");
+            System.out.println(newNumber +" "+ chicken + "s getting fried");
         }
     
     }
@@ -82,15 +83,15 @@ public class Portfolio
     public void midtermQuestion(){
         Scanner keyboard = new Scanner(System.in);
         System.out.println('\u000C');
-        System.out.println("What data type returns either true or false?");
-        System.out.println("String");
-        System.out.println("Int");
-        System.out.println("Boolean");
-        System.out.println("Long");
+        System.out.println("What language do we code in?");
+        System.out.println("C");
+        System.out.println("java");
+        System.out.println("Deepika");
+        System.out.println("Padukone");
         
         String answer = keyboard.nextLine();
         
-        if(answer.equals("Boolean")){
+        if(answer.equals("java")){
             System.out.println("yes mate!");
         
     }
