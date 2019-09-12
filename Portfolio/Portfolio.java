@@ -83,20 +83,20 @@ public class Portfolio
     public void midtermQuestion(){
         Scanner keyboard = new Scanner(System.in);
         System.out.println('\u000C');
-        System.out.println("What language do we code in?");
-        System.out.println("C");
-        System.out.println("java");
-        System.out.println("Deepika");
-        System.out.println("Padukone");
+        System.out.println("Which of the following is the smallest integer data type");
+        System.out.println("Wagon");
+        System.out.println("Int");
+        System.out.println("Byte");
+        System.out.println("Womble");
         
         String answer = keyboard.nextLine();
         
-        if(answer.equals("java")){
+        if(answer.equals("Byte")){
             System.out.println("yes mate!");
         
     }
     else{
-        System.out.println("wrong, fool");
+        System.out.println("trash mate");
     }
 }
 
